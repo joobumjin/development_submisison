@@ -50,7 +50,7 @@
                                     Skills
                                 </div>
                                 <div class = "info">
-                                    HTML, CSS, React
+                                    HTML, CSS, JS, React
                                 </div>
                             </div>
                         </div>
@@ -84,11 +84,11 @@
 
                     <img src="./assets/comparison.png" alt="Competitive Comparison of Features">
 
-                    <p>From this, I decided a few important factors that would be ideal to implement.                     </p>
-                    <p>Firstly, sorting by added date helped me find what I had most recently liked.</p>
-                    <p>Next, multiple ways of organizing (by artist, by album) helped me find songs faster</p>
-                    <p>Then, a big list of all my songs was nice in case I wanted to see them all</p>
-                    <p>Finally, one click for favoriting and unfavoriting made the experience smoother in my usage.</p>
+                    <p>From this, I decided a few important factors that would be ideal to implement.</p>
+                    <p>Firstly, sorting by added date helped me find what I had most recently liked. I think most people tend to gravitate towards the songs they liked most recently, and so this sorting order makes a lot of sense.
+                        Next, multiple ways of organizing (by artist, by album) helped me find songs faster, if I had not recently added the song.
+                        Then, a big list of all my songs was nice in case I wanted to see all of the songs I had liked, rather than just looking for a particular song. 
+                        Finally, one click for favoriting and unfavoriting made the experience smoother in my usage. For both Apple Music and Spotify, I found it a bit annoying that I had to press into an extended menu and then had to locate the unfavorite button for each individual song.</p>
 
 
                 </div>
@@ -97,7 +97,7 @@
             <div class = "section">
                 <div class = "header subsection_header">
                     <div class="header_content">
-                        <h2>Discussion</h2>
+                        <h2>Discussion & Technical Features</h2>
                     </div>
                 </div>
 
@@ -105,13 +105,23 @@
                     <p>The code for the final React App can be found here: <a href="https://github.com/joobumjin/cs1300-development">https://github.com/joobumjin/cs1300-development</a></p>
 
                     <p>The deployed demo for the site can be found here! <a href="https://cs1300-development-npgb2qh9d-joobumjins-projects.vercel.app/">https://cs1300-development-npgb2qh9d-joobumjins-projects.vercel.app/</a></p>
-                    
-                    <p>Due to time constraints from personal issues, I ran out of time in developing a second filter.</p>
-
-                    <p>I also did not really have time to style the website for similar reasons.</p>
 
                     <p>
-                        However, the primary work I did put in was towards simultaneous filtering/sorting as well as clean aggregation.
+                        The primary work I put in was towards simultaneous filtering/sorting as well as clean aggregation. In the end, I had sorting by artist name and filtering by song length for all songs. 
+                    </p>
+
+                    <p>
+                        Lately, a large trend has been in avoiding songs that are too long. For instance, many artists (e.g. New Jeans, RIIZE) have been releasing songs that hover around 2 minutes in length, or are even shorter than that.
+                        I think this likely mirrors a trend in consumption where listeners are more often opting for shorter form content, as has been the case with videos (consider YouTube videos vs YouTube shorts/TikTok).
+                    </p>
+
+                    <p>
+                        In terms of sorting, I find I might oftentimes forget the name of an individual song or album, but I rarely forget the names of artists that I really like.
+                        Thus, I thought that grouping the entire list of songs based on the artist would aid in finding the songs by an artist.
+                    </p>
+
+                    <p>
+                        For aggregation, I often find myself listening to entire albums of songs rather than individual one-offs. Thus, I decided to organize the favorited songs based on the albums.
                     </p>
                     
                     <p>
@@ -127,6 +137,30 @@
 
                         The uniqueness of the IDs was really useful for data aggregation, as I could then design dictionaries (Objects) which used a shared aggregating feature (in my case, albums) as the key, with values being the relevant songs.
                     </p>
+                </div>
+            </div>
+
+            <div class = "section">
+                <div class = "header subsection_header">
+                    <div class="header_content">
+                        <h2>Conclusion</h2>
+                    </div>
+                </div>
+
+                <div class="body">
+                    <p>Due to time constraints from personal issues, I ran out of time in developing a second filter.</p>
+
+                    <p>I also did not really have time to style the website for similar reasons.</p>
+
+                    <p>Moreover, I'm left curious about how this experience might change if I wanted to scale up the project. With hundreds, or even thousands of songs, would a simple, single json file be able to efficiently manage all of my songs?
+                        How would incorporating a backend change a lot of my programming decisions and what features might be moved away from the website app itself and into backend code that might be better suited for processing a large scale of complex data?
+                    </p>
+
+                    <p>
+                        However, throughout this experience, I have definitely developed my skills and knowledge in working around JavaScript and React (+ the Material UI Component Library as well!). It was really interesting to work with JSON-type Objects directly in a frontend application and really helped me understand
+                        how frontend code should be structured, split, and individually tested for functionality. 
+                    </p>
+
                 </div>
             </div>
     </body>
