@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- import font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <title>Development</title>
+        <!-- import CSS styles -->
+        <link rel="stylesheet" href="styles.css" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+
+    <body>
+        <div class="main_content">
+            <div class = "section title">
+                <div class = "header page_header">
+                    <div class="header_content">
+                        <h1>Development</h1>
+                        <div class = "header_subtext">
+                            <p>Developing a React Aggregation Page</p>
+                        </div>
+                        <div class = "project_details">
+                            <div class = "detail_card">
+                                <div class = "detail_name">
+                                    Role
+                                </div>
+                                <div class = "info">
+                                    Student
+                                </div>
+                            </div>
+                            <div class = "detail_card">
+                                <div class = "detail_name">
+                                    Time
+                                </div>
+                                <div class = "info">
+                                    Mar-Apr 2024
+                                </div>
+                            </div>
+                            <div class = "detail_card">
+                                <div class = "detail_name">
+                                    Class
+                                </div>
+                                <div class = "info">
+                                    CS1300: UI/UX
+                                </div>
+                            </div>
+                            <div class = "detail_card">
+                                <div class = "detail_name">
+                                    Skills
+                                </div>
+                                <div class = "info">
+                                    HTML, CSS, React
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            
+                <div class = "body project_summary">
+                    <p>
+                        The goal of this project was for students to attempt building an aggregation tool (in my case, a music favoriting site), through React
+                    </p>
+
+                    <p>
+                        This project used React, HTML, and CSS elements to get a working single page applicaiton.
+                    </p>
+                </div>
+            </div>
+            
+            <div class = "section">
+                <div class = "header subsection_header">
+                    <div class="header_content">
+                        <h2>Competitive Analysis</h2>
+                    </div>
+                </div>
+                
+                <div div class="body project_summary">
+                    <p>Taking a look at Apple Music, Spotify, and YouTube Music, and in particular their like / add to library mechanisms.</p>
+
+                    <p>Apple Music: <a href="https://music.apple.com/us/home?l=en-US">https://music.apple.com/us/home?l=en-US</a></p>
+                    <p>Spotify <a href="https://open.spotify.com/">https://open.spotify.com/</a></p>
+                    <p>YouTube Music <a href="https://music.youtube.com/">https://music.youtube.com/</a></p>
+
+                    <img src="./assets/comparison.png" alt="Competitive Comparison of Features">
+
+                    <p>From this, I decided a few important factors that would be ideal to implement.                     </p>
+                    <p>Firstly, sorting by added date helped me find what I had most recently liked.</p>
+                    <p>Next, multiple ways of organizing (by artist, by album) helped me find songs faster</p>
+                    <p>Then, a big list of all my songs was nice in case I wanted to see them all</p>
+                    <p>Finally, one click for favoriting and unfavoriting made the experience smoother in my usage.</p>
+
+
+                </div>
+            </div>
+
+            <div class = "section">
+                <div class = "header subsection_header">
+                    <div class="header_content">
+                        <h2>Discussion</h2>
+                    </div>
+                </div>
+
+                <div class="body">
+                    <p>The code for the final React App can be found here: <a href="https://github.com/joobumjin/cs1300-development">https://github.com/joobumjin/cs1300-development</a></p>
+
+                    <p>The deployed demo for the site can be found here! <a href="https://cs1300-development-npgb2qh9d-joobumjins-projects.vercel.app/">https://cs1300-development-npgb2qh9d-joobumjins-projects.vercel.app/</a></p>
+                    
+                    <p>Due to time constraints from personal issues, I ran out of time in developing a second filter.</p>
+
+                    <p>I also did not really have time to style the website for similar reasons.</p>
+
+                    <p>
+                        However, the primary work I did put in was towards simultaneous filtering/sorting as well as clean aggregation.
+                    </p>
+                    
+                    <p>
+                        Given that this project was meant to be a one page react app, I found it difficult to pre-emptively determine which features might be able to fit on a single page and which might 
+                        instead look very cluttered or otherwise unusable on just one page. To this end, I struggled with deciding how extra filtering information should show up for a single song's card.
+                    </p>
+
+                    <p> 
+                        Additionally, I had a lot of considerations and thoughts about data storage. Given that I don't have access to any official backends for popular sites,
+                        I wasn't quite sure how I should start designing the data structure in a way that would be both efficient, yet understandable.
+
+                        Ultimately, I decided to use jsons which associate unique song/album ID numbers to their respective song/album.
+
+                        The uniqueness of the IDs was really useful for data aggregation, as I could then design dictionaries (Objects) which used a shared aggregating feature (in my case, albums) as the key, with values being the relevant songs.
+                    </p>
+                </div>
+            </div>
+    </body>
+
+</html>
